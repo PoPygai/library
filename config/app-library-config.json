@@ -1,0 +1,26 @@
+{
+  "port": 3555,
+  "skipPaths": [
+    "POST/accounts",
+    "GET/api/books",
+    "POST/accounts/login"
+  ],
+  "pathsRoles": {
+    "PUT/accounts" : ["user", "admin"],
+    "GET/accounts/account":["user", "admin"],
+    "DELETE/accounts/account":["owner"],
+    "PUT/accounts/roles":["owner"],
+    "POST/api/books":["librarian", "admin"],
+    "DELETE/api/books/remove":["librarian", "admin"],
+    "PUT/api/books/pickup":["librarian"],
+    "PUT/api/books/return":["librarian"],
+    "GET/api/books/book":["user"],
+    "GET/api/books/genre":["user"],
+    "GET/api/books/reader":["librarian"],
+    "GET/api/books/readers":["librarian"],
+    "GET/api/books/reader/books":["librarian"],
+    "GET/api/books/genre/status":["user"]
+  },
+  "time_window_sec": 60,
+  "request_limit": 2
+}
