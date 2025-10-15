@@ -12,15 +12,15 @@ The server integrates MongoDB (via Mongoose) and MySQL databases to manage books
 
 Register new users
 
-Login / Logout
+Login
 
 Token-based access protection (JWT)
 
 🗂️ Integration with two databases:
 
-MongoDB (via Mongoose) — stores book data and genres
+MongoDB (via Mongoose) — stores book data , genres , manages users, accounts, and relations between books and readers
 
-MySQL — manages users, accounts, and relations between books and readers
+MySQL —  stores book data , genres  (if mongo doesnt work)
 
 📖 RESTful API design
 
